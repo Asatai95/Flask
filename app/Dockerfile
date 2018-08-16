@@ -6,8 +6,10 @@ WORKDIR /var/www
 COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
-
+RUN pip install PyMySQL
 
 WORKDIR /var/www/src
+
+COPY ./python /etc/python
 
 CMD ["uwsgi","--ini","/var/www/uwsgi.ini"]

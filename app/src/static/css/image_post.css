@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+* {
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  color: #7b8084;
+  background: white;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: auto;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0;
+  height: 100%;
+  min-width: inherit;
+  border-bottom: none;
+  position: relative;
+  font-size: 100%;
+  margin: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.35;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+div.image {
+  width: 100%;
+  min-height: 100%;
+  background: url('../img/GOPR0287.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  padding: 50px;
+  display: block;
+}
+
+div.header {
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+}
+
+ul.header_id li {
+  margin: 0 5px;
+  margin-top: 35px;
+}
+
+ul.header_id li a {
+  text-decoration: none;
+}
+
+li.red a {
+  color: red;
+}
+
+li.white a {
+  color: white;
+}
+
+li.white_last a {
+  color: white;
+}
+
+li.red {
+  font-size: 25px;
+  font-weight: 600;
+  float: left;
+  list-style: none;
+  width: 100px;
+  background: rgba(123, 128, 132, 0.6);
+  box-shadow: 0 0 8px gray;
+  border-radius: 10px;
+}
+
+li.red:hover {
+  font-size: 25px;
+  font-weight: 600;
+  float: left;
+  list-style: none;
+  width: 100px;
+  background: rgba(123, 128, 132, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 8px white;
+  transform: scale(1.1);
+}
+
+li.white {
+  color: white;
+  font-size: 25px;
+  float: left;
+  list-style: none;
+  width: 175px;
+  background: rgba(123, 128, 132, 0.5);
+  box-shadow: 0 0 8px gray;
+  border-radius: 10px;
+}
+
+li.white:hover {
+  color: white;
+  font-size: 25px;
+  float: left;
+  list-style: none;
+  width: 175px;
+  background: rgba(123, 128, 132, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  transform: scale(1.1);
+}
+
+li.white_last {
+  color: white;
+  font-size: 25px;
+  float: left;
+  list-style: none;
+  width: 100px;
+  background: rgba(123, 128, 132, 0.5);
+  box-shadow: 0 0 8px gray;
+  border-radius: 10px;
+}
+
+li.white_last:hover {
+  color: white;
+  font-size: 25px;
+  float: left;
+  list-style: none;
+  width: 100px;
+  background: rgba(123, 128, 132, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  transform: scale(1.1);
+}
+
+div.header_sub {
+  width: 200px;
+  float: right;
+}
+
+div.henkan {
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-style: normal;
+  float: right;
+  height: 30px;
+  width: 200px;
+  margin: 10px 10px 0 0;
+}
+
+div.henkan span.en {
+  font-size: 20px;
+  list-style: none;
+}
+
+div.henkan span.en a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  background: rgba(123, 128, 132, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+  margin: 0 10px 0 0;
+}
+
+div.henkan span.en a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  background: rgba(123, 128, 132, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  margin: 0 10px 0 0;
+  transform: scale(1.1);
+}
+
+
+div.henkan span.sp {
+  font-size: 20px;
+  color: white;
+  list-style: none;
+}
+
+div.henkan span.sp a {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  background: rgba(123, 128, 132, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+  margin: 0 10px 0 0;
+}
+
+div.henkan span.sp a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  background: rgba(123, 128, 132, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  margin: 0 10px 0 0;
+  transform: scale(1.1);
+}
+
+div.img_tag img {
+  width: 80px;
+  margin-left: 55px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 8px;
+}
+
+div.main {
+  height: 780px;
+  color: black;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  margin-top: 20px;
+  display: none;
+}
+
+p.post_text {
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 800;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+div.post_form {
+  height: 480px;
+}
+
+div.post_form form {
+  height: 600px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.post_form form #user {
+  height: 30px;
+  margin-bottom: 35px;
+  width: 400px;
+}
+
+div.post_form form #user_comment {
+  position: relative;
+  height: 100px;
+  width: 400px;
+}
+
+div.post_form form .inline {
+  display: inline-block;
+  margin-bottom: 2.0vw;
+  height: 50px;
+  width: 380px;
+}
+
+#user form .inline {
+  width: 337px;
+  height: 90px;
+}
+
+div.post_form form .inline_img {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.8vw;
+  width: 400px;
+  height: 140px;
+}
+
+div.preview {
+  display: inline;
+  width: 30px;
+  height: 30px;
+}
+
+div.post_form form .inline_img img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin-left: 180px;
+  margin-bottom: 10px;
+
+}
+
+div.post_form form .inline_img .file {
+  margin-left: 115px;
+  width: 25vw;
+  height: 25px;
+}
+
+div.post_form form .inline_img label {
+  position: absolute;
+  top: 50px;
+  font-size: 25px;
+  width: 10vw;
+  display: inline-block;
+}
+
+div.post_form form .inline label {
+  font-size: 25px;
+  width: 120px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#user form .inline label {
+  width: 100px;
+}
+
+div.post_form form .inline .user_comment {
+  position: absolute;
+  margin-top: 40px;
+}
+
+div.post_form form .inline_img label[for="file"] {
+  width: 20vw;
+  color: white;
+  background-color: #707070;
+  padding: 6px;
+  border-radius: 0;
+}
+
+div.post_form form .inline_img label[for="file"].hide {
+  background: none;
+}
+
+div.post_form form .inline input {
+  font-size: 1.5vw;
+  width: 20vw;
+  height: 2.8vw;
+  border: 1px solid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.post_form form .inline_img input {
+  font-size: 1.5vw;
+  width: 20vw;
+  height: 2.3vw;
+  border: 1px solid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+div.post_form form .inline_img .file {
+  margin-left: 124px;
+  cursor: pointer;
+  padding-top: 3px;
+  bottom: 20px;
+  position: absolute;
+}
+
+div.post_form form .inline_img input[type="file"].hide {
+  display: none;
+}
+
+div.post_form form .inline textarea {
+  font-size: 18px;
+  width: 25vw;
+  height: 100px;
+  border: 2px solid;
+  resize: none;
+  margin-left: 124px;
+  position: absolute;
+  padding: 5px;
+}
+
+div.post_form form .inline:after {
+  content: "\A";
+  white-space: pre;
+}
+
+div.post_form form .inline_img:after {
+  content: "\A";
+  white-space: pre;
+}
+
+div.post_form form input[type="submit"] {
+  font-size: 3vw;
+  margin-top: 5vw;
+  display: inline-block;
+  text-align: center;
+  border: solid 3px black;
+  padding: 0.8vw 11.1vw;
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 80px
+}
+
+div.post_form form input[type="submit"]:hover {
+  box-shadow: 0 0 50px white;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+div.post_form form input[type="submit"]:active {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+
+p.error {
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+  color: red;
+  font-weight: 800;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  height: 35px;
+
+}
+
+footer img {
+  width: 30px;
+}
+
+footer .last {
+  margin: 0;
+  display: inline;
+  font-weight: 600;
+  color: white;
+}

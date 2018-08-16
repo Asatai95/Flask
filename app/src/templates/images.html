@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name='keywords' content=''>
+    <meta name='description' content="">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/img/sandaru.jpeg">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/images.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/images.js"></script>
+
+    <title>宮古方言</title>
+
+  </head>
+
+  <body>
+   <div class='image'>
+    <header>
+      <div class='header'>
+        <ul id='header_id' class='header_id'>
+          <li class='red'><a href="/">宮古方言</a></li>
+          <li class='white'><a href="/info">宮古方言とは？</a></li>
+          <li class='white_last'><a href="/images">イラスト</a></li>
+        </ul>
+      </div>
+      <div class='header_sub'>
+       <div class='henkan'>
+        <span class='en'><a href="#">English</a></span>
+        <span class='sp'><a href="#">Spain</a></span>
+       </div>
+       <div class='img_tag'>
+         <img class='img' src="../static/img/si-sa.png" alt="">
+       </div>
+     </div>
+    </header>
+  
+    <div class='main'>
+      <p class='text'>〜宮古島〜</p>
+      <div class='images'>
+        <ul>
+          {% for tests in test %}
+          <li class='list'>
+            <a href="/images/{{tests['id']}}">
+              <img src="../{{tests['img']}}" alt=''>
+              <div class='list_text'>
+                <p class='title'>{{tests['post']}}</p>
+                <p class='comment'>{{tests['comment']}}</p>
+              </div>
+            </a>
+          </li>
+          {%endfor%}
+          <li class='list_after'>
+            {% for img in imgs %}
+            <img src="../{{img['img']}}" alt="" class='image_sub'>
+            {%endfor%}
+            <img src="../static/img/batu.png" alt="" class='batu' onClick="history.back()">
+            {% for img in imgs %}
+            <p class='name'>User: {{img['post']}}</p>
+            {% endfor %}
+            {% for img in imgs %}
+            <p class='comment_last'>Comment: <br> {{img['comment']}}</p>
+            {% endfor %}
+
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+  </body>
+</html>

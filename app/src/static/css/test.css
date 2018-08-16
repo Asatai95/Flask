@@ -156,6 +156,16 @@ p.red a {
   text-decoration: none;
 }
 
+p.next {
+  font-size: 50px;
+  color: red;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
 img.img {
   margin-left: 41%;
   width: 200px;

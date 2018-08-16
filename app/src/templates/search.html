@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name='keywords' content=''>
+    <meta name='description' content="">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/img/sandaru.jpeg">
+
+    <link rel="stylesheet" type="text/css" href="static/css/search.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/search.js"></script>
+
+    <title>宮古方言</title>
+
+  </head>
+  <body>
+   <div class='main'>
+    <div class='main_sub'>
+      <header>
+        <div class='header'>
+          <ul id='header_id' class='header_id'>
+            <li class='red'><a href="/">宮古方言</a></li>
+            <li class='white'><a href="/info">宮古方言とは？</a></li>
+            <li class='white_last'><a href="/images">イラスト</a></li>
+          </ul>
+        </div>
+        <div class='header_sub'>
+         <div class='henkan'>
+          <span class='en'><a href="#">English</a></span>
+          <span class='sp'><a href="#">Spain</a></span>
+         </div>
+         <div class='img_tag'>
+           <img class='img' src="static/img/si-sa.png" alt="">
+         </div>
+       </div>
+      </header>
+      <div class='machine'>
+        <div class='_text'>
+          <p class='white'>宮古方言を検索してみよう！</p>
+        </div>
+        <div class='ma_text'>
+          <!-- <form action="/">
+            <div class='ma_form'>
+              <input type="text" name="text" placeholder='文字を入力してください'>
+            </div>
+            <button type="submit" name="submit" class='submit'>Let's Go!</button>
+          </form> -->
+          <div class='text_buttom'>
+            PUSH THE BUTTON
+          </div>
+          <div class='uchina'>
+            <p class='black'>
+              標準語を宮古の言葉に変換します。<br>
+              自分の好きな方言を見つけよう！
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='content'>
+       <form action="/" method="POST">
+         <div class="search_box">
+           <div class='search_top'>
+            <textarea name="search" rows="8" cols="80" placeholder="キーワードを入力してください" maxlength="30">{% for tests in text %}{{tests["miyako"]}}{%endfor%}{{test}}</textarea>
+             <button type="submit" name="submit" class="search">翻訳</button>
+             <p class='count'>0/30</p>
+             <img src="static/img/yazirushi.png" alt="">
+             <div class='search_last'>
+               <textarea name="search_last" rows="8" cols="80" placeholder="">{% for tests in text %}{{tests["h_y"]}}{%endfor%}{{test}}</textarea>
+             </div>
+           </div>
+         </div>
+       </form>
+      </div>
+      <div class='community'>
+       <p>みんなと共有しよう！</p>
+        <div class='social'>
+          <a class='circle_button facebook' href="https://www.facebook.com/">
+            <div class='icon icon_facebook'></div>
+          </a>
+          <a class='circle_button twitter' href="https://twitter.com/">
+            <div class='icon icon_twitter'></div>
+          </a>
+          <a class='circle_button instagram' href="https://www.instagram.com/?hl=ja">
+            <div class='icon icon_instagram'></div>
+          </a>
+        </div>
+      </div>
+      <footer>
+        <img src="static/img/Untitled1.png" alt="">
+        <p class='last'>@宮古方言</p>
+      </footer>
+    </div>
+   </div>
+  </body>
+</html>

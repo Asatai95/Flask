@@ -1,0 +1,4 @@
+# how to byte-compile (comma separated: standard, optimize)
+byte-compile = standard
+
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://username:password@server/db' 

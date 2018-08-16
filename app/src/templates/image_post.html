@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name='keywords' content=''>
+    <meta name='description' content="">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/img/sandaru.jpeg">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/image_post.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/image_post.js"></script>
+
+    <title>宮古方言</title>
+
+  </head>
+
+  <body>
+   <div class='image'>
+    <header>
+      <div class='header'>
+        <ul id='header_id' class='header_id'>
+          <li class='red'><a href="/">宮古方言</a></li>
+          <li class='white'><a href="/info">宮古方言とは？</a></li>
+          <li class='white_last'><a href="/images">イラスト</a></li>
+        </ul>
+      </div>
+      <div class='header_sub'>
+       <div class='henkan'>
+        <span class='en'><a href="#">English</a></span>
+        <span class='sp'><a href="#">Spain</a></span>
+       </div>
+       <div class='img_tag'>
+         <img class='img' src="../static/img/si-sa.png" alt="">
+       </div>
+     </div>
+    </header>
+    <div class='main'>
+      <div class='post'>
+        <p class='post_text'>みんなと写真を共有しよう！！</p>
+        <div class=post_form>
+          <p class='error'>{{error}}</p>
+         <form action="/images/image_post" method="POST" enctype="multipart/form-data">
+          <div class="inline_img">
+           <label id='image' for="userid" class='name'>image</label>
+           <div class='preview'></div>
+           <input id="img_file" class="file" type="file" name="img_file" value="画像選択">
+          </div>
+          <div id='user' class="inline">
+            <label for="user" class='user'>User</label>
+            <input type="text" name="user" value="">
+          </div>
+          <div id="user_comment" class="inline">
+            <label for="user_comment" class='user_comment'>Comment</label>
+            <textarea name="comment" placeholder="この写真の思い出は？(3０文字以内)" maxlength="30"></textarea>
+          </div>
+          <input class="button" type="submit" value="Let's Go!" />
+         </form>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <img src="static/img/Untitled1.png" alt="">
+      <p class='last'>@宮古方言</p>
+    </footer>
+  </div>
+  </body>
+</html>
